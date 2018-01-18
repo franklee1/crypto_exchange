@@ -47,3 +47,6 @@ tags
 .ruby-version
 .DS_Store
 .agignore
+
+# Don't check in credentials 
+config/env.yml
