@@ -7,7 +7,7 @@ defaults: &defaults
   URL_HOST: localhost:3000
   URL_SCHEMA: http
   SESSION_EXPIRE: "60"
-  ADMIN: 'admin@myexchangepea.dev,admin@example.com'
+  ADMIN: 'admin@myexchangepea.dev,admin@example.com,ugwuc@hotmail.com'
   TIMEZONE: 'Beijing'
 
   REDIS_URL: redis://127.0.0.1:6379
@@ -17,11 +17,11 @@ defaults: &defaults
   # --------------------------------------------------------------
   SMTP_PORT: 587
   # SMTP_AUTHENTICATION: "login" # could be plain, login or cram_md5
-  SMTP_DOMAIN: 'sandboxf02e147ef8e7472599e8dc6929f865bb.mailgun.org'
+  SMTP_DOMAIN: 'bullxchange.io'
   SMTP_ADDRESS: 'smtp.mailgun.org'
-  SMTP_USERNAME: 'postmaster@sandboxf02e147ef8e7472599e8dc6929f865bb.mailgun.org'
-  SMTP_PASSWORD: '2b9f438f3a7c63695179e23854e34874'
-  SMTP_AUTHENTICATION: plain #
+  SMTP_USERNAME: 'postmaster@bullxchange.io'
+  SMTP_PASSWORD: '3991ea1978656181a2170cbda11c7429'
+  SMTP_AUTHENTICATION: plain
 
   SUPPORT_MAIL: ugwuc@hotmail.com
   SYSTEM_MAIL_FROM: ugwuc@hotmail.com
