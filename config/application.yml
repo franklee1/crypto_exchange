@@ -82,7 +82,10 @@ defaults: &defaults
   WEIBO_AUTH: on # on/off
   WEIBO_KEY: "3820920586"
   WEIBO_SECRET: 2d6174dc698e86860c75d75b1e8a01c8
-
+  
+  AUTHY_API_KEY: ZcHNkcP944q4zbFDFkrv2fNXi5PT5C5G
+  AUTHY_API_URI: 'https://api.authy.com/'
+  
   # chat setting
   # --------------------------------------------------------------
   # Do you want chat feature in your exchange ?
