@@ -72,7 +72,7 @@ defaults: &defaults
   TWILIO_TOKEN: ca249f630529c46d5a05ef94a741e24a
 
   SMSAUTHKEY: 188737AzwsuMr0F5a3893b2
-  SENDER: Bitcharge
+  SENDER: Exchange
   ROUTE: 4
   COUNTRY: 0
   # Third party auth
