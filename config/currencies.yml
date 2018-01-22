@@ -18,13 +18,15 @@
   coin: true
   quick_withdraw_max: 0
   rpc: http://test:test@127.0.0.1:18332
-  blockchain: https://blockchain.info/tx/#{txid}
-  address_url: https://blockchain.info/address/#{address}
+  blockchain: https://live.blockcypher.com/btc-testnet/tx/#{txid}
+  address_url: https://testnet.blockexplorer.com/address/#{address}
+  # blockchain: https://blockchain.info/tx/#{txid}
+  # address_url: https://blockchain.info/address/#{address}
   assets:
     accounts:
       -
         address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
-        
+
 - id: 3
   key: ether
   code: eth
@@ -42,7 +44,7 @@
 - id: 4
   key: etc
   code: etc
-  symbol: "฿"
+  symbol: "E"
   coin: true
   precision: 4
   quick_withdraw_max: 0
@@ -56,7 +58,7 @@
 - id: 5
   key: litecoin
   code: ltc
-  symbol: "฿"
+  symbol: "Ł"
   coin: true
   precision: 4
   quick_withdraw_max: 0
@@ -68,6 +70,34 @@
       -
         address: LUJFBiG8DEcjRJdgUgGzENKfwMMkxucyuZ
 - id: 6
+  key: dashcoin
+  code: dsh
+  symbol: "D"
+  coin: true
+  precision: 4
+  quick_withdraw_max: 0
+  rpc: http://test:test@127.0.0.1:9339
+  blockchain: https://etherscan.io/tx/#{txid}
+  address_url: https://etherscan.io/address/#{address}
+  assets:
+    accounts:
+      -
+        address:  0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
+- id: 7
+  key: zec
+  code: zec
+  symbol: "Z"
+  coin: true
+  precision: 4
+  quick_withdraw_max: 0
+  rpc: http://localhost
+  blockchain: https://etherscan.io/tx/#{txid}
+  address_url: https://etherscan.io/address/#{address}
+  assets:
+    accounts:
+      -
+        address: 0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
+- id: 8
   key: bcc
   code: bcc
   symbol: "฿"
@@ -81,21 +111,7 @@
     accounts:
       -
         address: 0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
-- id: 7
-  key: zec
-  code: zec
-  symbol: "฿"
-  coin: true
-  precision: 4
-  quick_withdraw_max: 0
-  rpc: http://localhost
-  blockchain: https://etherscan.io/tx/#{txid}
-  address_url: https://etherscan.io/address/#{address}
-  assets:
-    accounts:
-      -
-        address: 0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
-- id: 8
+- id: 9
   key: bts
   code: bts
   symbol: "฿"
