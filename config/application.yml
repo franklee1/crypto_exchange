@@ -17,10 +17,10 @@ defaults: &defaults
   # --------------------------------------------------------------
   SMTP_PORT: 587
   # SMTP_AUTHENTICATION: "login" # could be plain, login or cram_md5
-  SMTP_DOMAIN: 'bullxchange.io'
-  SMTP_ADDRESS: 'smtp.mailgun.org'
-  SMTP_USERNAME: 'postmaster@bullxchange.io'
-  SMTP_PASSWORD: '3991ea1978656181a2170cbda11c7429'
+  SMTP_DOMAIN: bullxchange.io
+  SMTP_ADDRESS: smtp.mailgun.org
+  SMTP_USERNAME: postmaster@bullxchange.io
+  SMTP_PASSWORD: af624dfcf6cc44a7517536c71f98fd6f
   SMTP_AUTHENTICATION: plain
 
   SUPPORT_MAIL: ugwuc@hotmail.com
