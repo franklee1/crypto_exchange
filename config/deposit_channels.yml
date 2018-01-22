@@ -19,7 +19,6 @@
   currency: eth
   min_confirm: 1
   max_confirm: 6
-  max_confirm: 6
 - id: 600
   key: litecoin
   currency: ltc
