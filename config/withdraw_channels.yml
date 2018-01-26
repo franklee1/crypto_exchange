@@ -67,7 +67,7 @@
   fee: 0.0005
   inuse: true
   type: WithdrawChannelNamecoin
-- id: 1600
+- id: 1800
   key: monero 
   currency: xmr
   fixed: 12
