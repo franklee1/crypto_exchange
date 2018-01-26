@@ -20,8 +20,12 @@ class Withdraw extends PeatioModel.Model
       when 'btc' then 'satoshis'
       when 'ltc' then 'litecoins'
       when 'dsh' then 'dashcoins'
+      when 'xrp' then 'ripples'
+      when 'zec' then 'zcashs'
       when 'ppc' then 'peercoins'
       when 'blk' then 'blackcoins'
+      when 'nmc' then 'namecoins'
+      when 'xmr' then 'monero'
       when 'rpt' then 'realpointcoins'
       when 'trt' then 'tritiumcoins'
 
