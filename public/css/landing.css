@@ -281,6 +281,7 @@ body{
     top: 14px;
 }
 header.navbar.navbar-default.navbar-static-top {
+    background-color: black;
     width: 100%;
     position: absolute;
 }

@@ -1190,10 +1190,10 @@ en:
         password: Sign In Password
         captcha: Captcha
       identity:
-        email: Sign In E-mail
+        email: E-mail
         old_password: Original password
-        password: New Password
-        password_confirmation: Confirm new password
+        password: Password
+        password_confirmation: Confirm password
       reset_password:
         password: New Password
       ticket:
