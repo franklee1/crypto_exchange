@@ -137,3 +137,33 @@
 .section5_right a:hover{
   color: grey !important;
 }
+
+#section6 .above{
+  text-align: center;
+  margin-top: 50px;
+}
+#section6 .below .table_header{
+  font-size: 20px;
+  margin-top: 60px;
+  display: flex;
+}
+#section6 .below .table_body{
+  background-color: #f7f7f7;
+  font-size: 20px;
+  display: flex;
+}
+#section6 .below .table_body a{
+  font-weight: 100;
+  color: grey;
+  line-height: 2em;
+}
+#section6 .below .table_header .element{
+  font-weight: bold;
+  height: 60px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+#section6 .below .element{
+  padding:20px;
+  flex:1;
+}
