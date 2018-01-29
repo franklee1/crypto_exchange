@@ -112,6 +112,7 @@
 }
 .section5_right{
   padding-left: 10%;
+  align-self: center;
   flex:2;
 }
 .section5_left h1{
