@@ -162,15 +162,28 @@ module ApplicationHelper
   end
 
   def guide_panel_title
-    @guide_panel_title || t("guides.#{i18n_controller_path}.#{action_name}.panel", default: t("guides.#{i18n_controller_path}.panel"))
+    guides_intro_str = "guides.#{i18n_controller_path}.#{action_name}"
+    puts guides_intro_str
+    if guides_intro_str!= "guides.identities.new" and guides_intro_str!= "guides.sessions.new"
+      @guide_panel_title || t("guides.#{i18n_controller_path}.#{action_name}.panel", default: t("guides.#{i18n_controller_path}.panel"))
+    end
   end
 
   def guide_title
-    @guide_title || t("guides.#{i18n_controller_path}.#{action_name}.title", default: t("guides.#{i18n_controller_path}.panel"))
+    guides_intro_str = "guides.#{i18n_controller_path}.#{action_name}"
+    puts guides_intro_str
+    if guides_intro_str!= "guides.identities.new" and guides_intro_str!= "guides.sessions.new"
+      @guide_title || t("guides.#{i18n_controller_path}.#{action_name}.title", default: t("guides.#{i18n_controller_path}.panel"))
+    end
   end
 
   def guide_intro
-    @guide_intro || t("guides.#{i18n_controller_path}.#{action_name}.intro", default: t("guides.#{i18n_controller_path}.intro", default: ''))
+    guides_intro_str = "guides.#{i18n_controller_path}.#{action_name}"
+    puts guides_intro_str
+    if guides_intro_str!= "guides.identities.new" and guides_intro_str!= "guides.sessions.new"
+      @guide_intro || t("guides.#{i18n_controller_path}.#{action_name}.intro", default: t("guides.#{i18n_controller_path}.intro", default: ''))
+    end
+    
   end
 
   def i18n_controller_path

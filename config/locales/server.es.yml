@@ -1074,8 +1074,8 @@ es:
         address: Address
         category: Category
       session:
-        email: Sign In E-mail
-        password: Sign In Password
+        email: Email
+        password: Password
         captcha: Captcha
       identity:
         email: E-mail
@@ -1462,7 +1462,7 @@ es:
     admin: Admin Panel
     market: Trade
     settings: Profile
-    signin: Sign In
+    signin: LOGIN
     signout: Exit
     signup: Sign Up
     login_via_weibo: Login via Weibo
@@ -1567,8 +1567,8 @@ es:
       reset_two_factor:
         create: Reset Two-Factor Authentication
       reset_password:
-        update: Reset Sign in Password
-        create: Reset Sign in Password
+        update: Reset Password
+        create: Reset Password
       fund_source:
         create: Save
       deposit:

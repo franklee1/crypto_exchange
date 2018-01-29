@@ -35,39 +35,25 @@
   .row{
     display: flex;
     #guide{
-      flex: 2;
+      flex: 3;
     }
     #content{
-      flex: 3;
+      flex: 4;
       align-self: center;
     }
   }
 }
 
-.form-group.password.required.identity_password_confirmation, .form-group.email.required.identity_email, .form-group.password.required.identity_password.field_with_hint{
-  .btn{
-    float:left !important;
-  }
-  input {
-    height: 50px;
-    margin-top: 10px;
-  }
-  .col-xs-8{
-    float:none;
-    text-align: left
-  }
-  .hint.col-xs-20.col-xs-offset-8{
-    display: none;
-  }
-}
-form.simple_form hr.split{
-  border-style: dotted;
-}
+
 .container{
   width:100%;
-  height: 100%;
+  // height: 100%;
   margin: 0;
   padding: 0;
+  hr.split{
+    border-style: dotted;
+    margin-left: 0px;
+  }
   .panel.panel-default{
     border:none;
     padding: 0;
@@ -79,20 +65,82 @@ form.simple_form hr.split{
       padding: 0;
     }
     #guide{
-      padding: 0 !important;
+      padding: 0px;
+      
       h3,p{
-        display: none;
+        //display: none;
+        margin: 0;
       }
     }
     #content{
-      form{
-        padding-left: 150px;
+      border: none;
+      //position: absolute;
+      // top: 150px;
+      // left: 50%;
+      // margin-left: -250px;
+      .hint.col-xs-offset-8{
+        display: none;
       }
-      .btn{
-        float: left !important;
-        background-color: red;
-        border-color: red;
-        border-radius: 4px;
+      form[action="/auth/identity/callback"]{
+        width: 500px;
+        margin-left: -8%;
+        .form-group.password.required.identity_password_confirmation, .form-group.email.required.identity_email, .form-group.password.required.identity_password.field_with_hint{
+          .btn{
+            float:left !important;
+          }
+          input {
+            height: 50px;
+            margin-top: 10px;
+          }
+          .col-xs-8{
+            float:none;
+            text-align: left
+          }
+        }
+        
+        .btn{
+          float: left !important;
+          border-radius: 4px;
+        }
+        .btn[value="LOGIN"]{
+          &:hover{
+            background-color: white;
+            border-color: black;
+            color: black;  
+          }
+          background-color: red;
+          border-color: red;
+          margin-right: 20px;
+        }
+        
+      }
+      form[action="/auth/identity/register"]{
+        padding-left: 150px;
+        padding-right: 100px;
+        .form-group.password.required.identity_password_confirmation, .form-group.email.required.identity_email, .form-group.password.required.identity_password.field_with_hint{
+          .btn{
+            float:left !important;
+          }
+          input {
+            height: 50px;
+            margin-top: 10px;
+          }
+          .col-xs-8{
+            float:none;
+            text-align: left
+          }
+        }
+        .btn{
+          &:hover{
+            background-color: white;
+            border-color: black;
+            color: black;  
+          }
+          float: left !important;
+          background-color: red;
+          border-color: red;
+          border-radius: 4px;
+        }
       }
     }
   }
@@ -116,8 +164,9 @@ html, body {
   }
 
   #content {
-    border-left: 1px solid $content-split;
+    // border-left: 1px solid $content-split;
     padding-top: 15px;
+    
 
 
     #setting_list.table {
@@ -210,7 +259,7 @@ form.simple_form {
 
   hr.split {
     border-top-color: #DDD;
-    margin-left: 10px;
+    // margin-left: 10px;
     margin-right: 54px;
   }
 }
