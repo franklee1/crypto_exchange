@@ -1,125 +1,85 @@
-header.text-center
-  .seperator-line
-  #wrap3
-    a.anchor#home
-    .banner.hidden-xs
-      /.banner-text = t("mainpage.message2")
-      /.banner-pair
-        - @tickers.each do |ticker|
-          .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
-      .intro
-        .fullscreen-bg
-          /video.fullscreen-bg__video loop='loop' preload='preload' muted='muted' autoplay='autoplay' poster='/languages/intro-bg.jpg'
-          video.fullscreen-bg__video loop='loop' preload='preload' muted='muted' autoplay='autoplay' poster='/languages/coinxprov2poster.jpg'
-            source src='/languages/coinxprov2.mp4' type='video/mp4'
-        .intro__wrapper
-          img src='/languages/intro-logo.png'
-          p = t("mainpage.message2")
-      .banner-pair
-        - @tickers.each do |ticker|
-          .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
-    .banner-mob.visible-xs.hidden-xs
-      img.img-responsive src='/languages/big-logo.jpg'
-      .banner-pair
-        - @tickers.each do |ticker|
-          .ticker-pair #{ticker.name} #{number_with_precision(ticker.ticker[:last], precision: ticker[:bid]["fixed"]) }
-
-    a.anchor#about-us
-    .index-block1
-      .index-block1-head = t("mainpage.message1")
-      .index-block1-dsc.myntexalstyle = t("mainpage.message3")
-    .index-block2
-      .index-block2-head
-        span class='white' = 'Exchange '
-        = t("mainpage.message13")
-      .container
-        .row
-          .col-md-4
-            .index-block2-img : img src="/languages/index-icons/1.png" alt="Exchange"
-            .index-block2-header = t("mainpage.message4a")
-            .index-block2-dsc = t("mainpage.message4b")
-            div.clearfix
-          .col-md-4
-            .index-block2-img : img src="/languages/index-icons/2.png" alt="Exchange"
-            .index-block2-header = t("mainpage.message6a")
-            .index-block2-dsc = t("mainpage.message6b")
-            div.clearfix
-          .col-md-4
-            .index-block2-img : img src="/languages/index-icons/3.png" alt="Exchange"
-            .index-block2-header = t("mainpage.message10a")
-            .index-block2-dsc = t("mainpage.message10b")
-            div.clearfix
-          div.clearfix
-          .index-block2-sep.hidden-xs
-          .col-md-4
-            .index-block2-img : img src="/languages/index-icons/4.png" alt="Exchange"
-            .index-block2-header = t("mainpage.message5a")
-            .index-block2-dsc = t("mainpage.message5b")
-            div.clearfix
-          .col-md-4
-            .index-block2-img : img src="/languages/index-icons/5.png" alt="Exchange"
-            .index-block2-header = t("mainpage.message7a")
-            .index-block2-dsc = t("mainpage.message7b")
-            div.clearfix
-          .col-md-4
-            .index-block2-img : img src="/languages/index-icons/6.png" alt="Exchange"
-            .index-block2-header = t("mainpage.message11a")
-            .index-block2-dsc = t("mainpage.message11b")
-            div.clearfix
-    .banner2 : img src="/languages/banners/ban2.jpg" alt="Exchange" style='width: 100%;'
-    .index-block3
-      .index-block3-title = t("mainpage.message12")
-      a href='/signup'
-        .index-block3-btn = t("mainpage.message3с")
-      .index-block3-sep
-    a.anchor#statistic
-    .banner2
-      img.img-responsive.hidden-xs.hidden-sm src="/languages/banners/ban3.jpg" alt="Exchange"
-      .container.banner4-grid.text-left
-        .row
-          .ban4-tblock.col-md-3.col-md-offset-1.ban4-l
-            .banner2-title = t("mainpage.message14")
-            .banner2-dsc = t("mainpage.message15")
-          .col-md-4.hidden-xs.hidden-sm
-            img.img-responsive src='/languages/banners/logo.png'
-          .ban4-tblock.col-md-3.ban4-r
-            .banner2-title = t("mainpage.message16")
-            .banner2-dsc = t("mainpage.message17")
-        .row.hidden-xs.hidden-sm style='height:20px;'
-        .row
-          .ban4-tblock.col-md-3.col-md-offset-5
-            .banner2-title = t("mainpage.message18")
-            .banner2-dsc = t("mainpage.message19")
-
-  a.anchor#description
-  /#wrap_new
-    hr class="star-light"
-  /b: h4 = 'Multi Coin Transactions'
-  /a href='./': img src="/languages/coinswallet_.png" alt="Exchange"
-  /.container
-    /a href='./'
-    /h1 = 'CRYPTO EXCHANGE WORLD'
-    /section
-      h1 = 'CRYPTO EXCHANGE WORLD'
-      #wrap_new
-        hr class="star-light"
-      h2 = ' '
-      h2 = ' '   
-      /h3 = t(:slogan)
-      b: h4 = 'Multi Coin Transactions'
-      /h2 = ' '
-      a href='./': img src="/languages/coinswallet_.png" alt="Exchange"
-    /section      
-      #getstart.row
-        - unless current_user
-          .col-xs-4.col-xs-offset-10.text-center
-            a href="#{signin_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signin")
-            a href="#{signup_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signup")
-          - if ENV['WEIBO_AUTH'] == "true"
-            .col-xs-4
-              a href="/auth/weibo" class="btn btn-primary btn-lg btn-block" role="button" = t("header.login_via_weibo")
-        - else
-          .col-xs-6.col-xs-offset-9.text-center
-            a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
-            a href="#{funds_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.funds")
-            a href="#{settings_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.settings")
+link href="/css/style.css" rel='stylesheet' type='text/css'
+#landing_page
+  #section1
+  #section2
+    h1 <b>Our</b> Features
+    .featues
+      .left_panel
+        img src='/landingpage/image1.png'
+      .right_panel
+        .feature_title
+          h4 MOBILE APPS
+        .feature_content
+          p style="color:gray" Our popular wallet works on your Android or iPhone with your web browser
+        .read_more
+          a style="font-weight:bold" Read More
+    .featues
+      .left_panel
+        img src='/landingpage/image2.png'
+      .right_panel
+        .feature_title
+          h4 SECURE STORAGE
+        .feature_content
+          p style="color:gray" We store the vast majority of the digital assets in secure offline storage
+        .read_more
+          a style="font-weight:bold" Read More
+    .featues
+      .left_panel
+        img src='/landingpage/image3.png'
+      .right_panel
+        .feature_title
+          h4 100% PROTECTION
+        .feature_content
+          p style="color:gray" Digital currency stored on our servers is covered by our insurance policy
+        .read_more
+          a style="font-weight:bold" Read More
+    .clear_both
+    .featues
+      .left_panel
+        img src='/landingpage/image4.png'
+      .right_panel
+        .feature_title
+          h4 MARKETPLACE
+        .feature_content
+          p style="color:gray" Trade bitcoin and ether across 3 order books with six different order types
+        .read_more
+          a style="font-weight:bold" Read More
+    .featues
+      .left_panel
+        img src='/landingpage/image5.png'
+      .right_panel
+        .feature_title
+          h4 FRIENDLY API
+        .feature_content
+          p style="color:gray" The world’s most popular digital currency API for your services
+        .read_more
+          a style="font-weight:bold" Read More
+    .featues
+      .left_panel
+        img src='/landingpage/image6.png'
+      .right_panel
+        .feature_title
+          h4 RECURRING BUYS
+        .feature_content
+          p style="color:gray" Invest in digital currency over time by scheduling buys weekly or monthly.
+        .read_more
+          a style="font-weight:bold" Read More
+  #section3
+  #section4
+    .fundsecurity_left
+      img src="/landingpage/homepage_background3.png"
+    .fundsecurity_right
+      .above
+        h1 <b>Fund</b> Security
+      .below
+        h4 All U.S. Dollar deposits are held at FDIC-insured banks. The majority of digital assets are stored offline in our proprietary, state-of-the-art Cold Storage system.
+        .securitycodex
+          i.glyphicon.glyphicon-lock <span style="margin-left:20px;font-family: sans-serif;color:black"> OUR SECURITY CODEX</span>
+  #section5
+    .section5_left
+      h1 <b>Create an account</b> 
+      h1 to start exchange
+      h4 style="color:grey;line-height:2em" Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus ut metus varius laoreet.
+    .section5_right
+      .create_account CREATE ACCOUNT
+      p style="text-align:center;font-size: 20px;" ALREADY A MEMBER? <a style="color:white" href="/signin">SIGN IN</a>

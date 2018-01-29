@@ -28,9 +28,10 @@
 @import 'features/simple_captcha';
 @import 'features/custom';
 
-
 /* layouts
 -------------------------------------------------------------- */
+
+
 .panel-body{
   .row{
     display: flex;
@@ -67,9 +68,10 @@
     #guide{
       padding: 0px;
       
-      h3,p{
-        //display: none;
+      h3,p,ul{
+        // display: none;
         margin: 0;
+        margin-left: 20px;
       }
     }
     #content{
