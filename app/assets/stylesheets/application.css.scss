@@ -30,7 +30,11 @@
 
 /* layouts
 -------------------------------------------------------------- */
-
+header.navbar.navbar-default.navbar-static-top>.container #logo img{
+  float: left;
+  width: 300px;
+  margin:auto;
+}
 
 .panel-body{
   .row{
@@ -71,7 +75,7 @@
       h3,p,ul{
         // display: none;
         margin: 0;
-        margin-left: 20px;
+        margin-left: 30px;
       }
     }
     #content{

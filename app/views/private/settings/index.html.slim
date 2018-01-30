@@ -88,18 +88,18 @@ table#setting_list.table
           = link_to t('.weibo.bind'), '/auth/weibo', class: 'btn btn-default btn-block'
 
 = content_for :guide_title do
-  h3 style="font-size: 20px;"
+  h3 style="font-size: 20px;margin-top:50px;margin-left:30px;"
     i.fa.fa-user
     span = current_user.email
 
 = content_for :guide do
   ul.list-group
     - if current_user.admin?
-      span.label.label-warning ADMIN
+      span.label.label-warning style="margin-left:30px;" ADMIN
     - current_user.tag_list.each do |key|
-      span.label.label-info
+      span.label.label-info style="margin-left:30px;"
         = member_tag(key)
-  p.text-warning style="margin-bottom:50px"
+  p.text-warning style="margin-bottom:50px;margin-left:30px"
     == t('.safety_instruction')
   /div id="coindesk-widget" data-size="mpu" data-align="left" style='padding-left: 5px'
   div id="myticker_" style="display: none"
