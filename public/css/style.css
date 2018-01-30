@@ -141,6 +141,9 @@ header.navbar.navbar-default.navbar-static-top>.container #logo img{
   background-repeat: no-repeat;
   background-size: cover;
 }
+#scroll_to_section2{
+  cursor: pointer;
+}
 #section3 .ticker{
   padding-top: 40px;
   padding-left: 40px;

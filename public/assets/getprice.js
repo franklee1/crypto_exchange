@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  $("#scroll_to_section2").click(function(){
+    
+    $('html, body').animate({
+      scrollTop: $(this).offset().top + 100 + 'px'
+    }, 1000);
+    return this;
+  })
+
   function showTickerInfo(id, price, change){
     var obj_price = $("#" + id + ">.ticker_price");
     obj_price.text('$ ' + price);
