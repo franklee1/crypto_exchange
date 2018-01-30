@@ -1,6 +1,20 @@
+header.navbar.navbar-default.navbar-static-top i{
+  margin-right: 10px;
+}
 header.navbar.navbar-default.navbar-static-top{
   background: transparent;
   border-bottom: 1px solid #575757;
+}
+ul.nav.navbar-nav.navbar-right li{
+  border: none !important;
+}
+header.navbar.navbar-default.navbar-static-top>.container{
+  width: 100% !important;
+}
+header.navbar.navbar-default.navbar-static-top>.container #logo img{
+  float: left;
+  width: 300px;
+  margin:auto;
 }
 #section1{
   background-image: url(/landingpage/homepage_background1.png);

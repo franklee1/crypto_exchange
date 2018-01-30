@@ -2368,9 +2368,9 @@ en:
     admin: Admin Panel
     market: Trade
     settings: Profile
-    signin: Log In
+    signin: Sign In
     signout: Exit
-    signup: Sign Up
+    signup: Register
     login_via_weibo: Login via Weibo
     funds: Funds
     getstart: Get Start
