@@ -86,6 +86,7 @@
       form[action="/auth/identity/callback"]{
         width: 500px;
         margin-left: -8%;
+        margin-top: 150px;
         .form-group.password.required.identity_password_confirmation, .form-group.email.required.identity_email, .form-group.password.required.identity_password.field_with_hint{
           .btn{
             float:left !important;
@@ -101,7 +102,7 @@
         }
         
         .btn{
-          float: left !important;
+          // float: left !important;
           border-radius: 4px;
         }
         .btn[value="LOGIN"]{
@@ -110,9 +111,12 @@
             border-color: black;
             color: black;  
           }
+          float: none !important;
+          width: 20%;
+          margin-left: 40%;
           background-color: red;
           border-color: red;
-          margin-right: 20px;
+          
         }
         
       }

@@ -6,7 +6,8 @@
   #checkterm
     input type="checkbox" style="margin-right:15px" By signin up an account, you agree to our terms and conditions
   hr.split
-  = f.button :wrapped, t('header.signin'), cancel: root_path
+  /= f.button :wrapped, t('header.signin'), cancel: root_path
+  = f.button :wrapped, t('header.signin_btn')
 
 /= content_for :guide do
   ul.list-unstyled

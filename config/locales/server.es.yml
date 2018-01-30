@@ -1462,6 +1462,7 @@ es:
     admin: Admin Panel
     market: Trade
     settings: Profile
+    signin_btn: LOGIN
     signin: Sign In
     signout: Exit
     signup: Register
