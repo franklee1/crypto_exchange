@@ -50,20 +50,20 @@ BORDER_WIDTH = 1
       $('#bid_entry').css('left',0)
       $('#bid_entry').css('top',window_h)
       $('#bid_entry').css('width',candlestick_w/2)
-      $('#bid_entry').css('height', '300px')
+      $('#bid_entry').css('height', '400px')
 
       $('#ask_entry').css('left',candlestick_w/2+gutter)
       $('#ask_entry').css('top',window_h)
       $('#ask_entry').css('width',candlestick_w/2)
-      $('#ask_entry').css('height', '300px')
+      $('#ask_entry').css('height', '400px')
 
       $('#order_book').width(candlestick_w)
-      $('#order_book').css('top',window_h + 330)
+      $('#order_book').css('top',window_h + 430)
       $('#order_book').css('left',0)
-      $('#order_book').height(300)
+      $('#order_book').height(400)
 
       $('#depths_wrapper').width(candlestick_w)
-      $('#depths_wrapper').css('top',window_h + 660)
+      $('#depths_wrapper').css('top',window_h + 860)
       $('#depths_wrapper').css('left',0)
 
       $('#ticker').css('left', candlestick_w + gutter)
@@ -74,5 +74,5 @@ BORDER_WIDTH = 1
 
       $('#market_list_wrapper .dropdown-wrapper .dropdown-menu').css('display', 'none')
       $('#market_trades_wrapper .dropdown-wrapper .dropdown-menu').css('display', 'none')
-
+      $('#dashboard_footer').css('top',window_h + 860 + 302 + gutter)
     @$node.resize()

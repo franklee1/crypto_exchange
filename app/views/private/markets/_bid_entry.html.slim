@@ -1,5 +1,6 @@
 #bid_entry.panel.panel-default.entry-right
-  .panel-body
+  .panel-title style="height:50px;background-color:#4dd710;color:white;font-size:20px;font-weight:bold;display:flex;align-self:center;padding-left:20px;padding-top:10px" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))
+  .panel-body style="padding-left:50px;padding-right:50px"
     = form_for [market, order], :remote => true do |f|
       = f.hidden_field :ord_type
       .input-group.price
@@ -22,5 +23,5 @@
         span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
       = render partial: 'balance', locals: {currency: t(market.bid['currency'], scope: 'market.currency')}
 
-      button.btn.btn-danger.btn-block.text-up type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))
+      button.btn.btn-danger.btn-block.text-up style="color:white;background-color:#4dd710;width:20%;padding:15px;border-radius:8px;font-size:20px;font-weight:bold;float:right" type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))
   = render partial: 'mask'

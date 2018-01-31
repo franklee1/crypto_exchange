@@ -744,14 +744,17 @@ header {
     }
 
     input {
+      height: 100%;
       text-align: right;
       padding-top: 8px !important;
       padding-bottom: 4px !important;
       padding-right: 6px !important;
       padding-left: 24px !important;
     }
-
-    margin-bottom: 8px;
+    height:50px;
+    //padding-left: 50px;
+    // padding-right: 50px;
+    margin-bottom: 15px;
   }
 
   .hint-price-disadvantage, .hint-positions  {
@@ -871,4 +874,18 @@ input#order_bid_fee, input#order_ask_fee {
   background: black;
 }
 
+#dashboard_footer{
+  position: absolute;
+  display: flex;
+  height: 400px;
+  .contact_left_side{
+    flex:1;
+  }
+  .contact_right_side{
+    flex:1;
+    background-image: url('/landingpage/homepage_background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 @import 'custom/market';
