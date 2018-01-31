@@ -512,9 +512,12 @@ header {
 
 #candlestick {
   position: absolute;
-  min-width: $candlestick-width; width: $candlestick-width;
-  min-height: $candlestick-height; height: $candlestick-height;
-  top: $gutter; left: $market-list-width + $gutter-2x;
+  min-width: $candlestick-width; 
+  width: $candlestick-width;
+  min-height: $candlestick-height; 
+  height: $candlestick-height;
+  top: $gutter; 
+  // left: $market-list-width + $gutter-2x;
 }
 
 .switch {
@@ -526,11 +529,13 @@ header {
 }
 
 #range_switch {
-  top: 13px; right: $order-book-width + $gutter-2x + 25;
+  top: 13px; 
+  // right: $order-book-width + $gutter-2x + 25;
   li { padding-left: 10px; padding-right: 0; }
 }
 #indicator_switch_wrapper {
-  top: 33px; right: $order-book-width + $gutter-2x + 25;
+  top: 33px; 
+  // right: $order-book-width + $gutter-2x + 25;
   li { padding-left: 10px; padding-right: 0; }
 }
 
@@ -550,6 +555,7 @@ header {
 }
 
 #market_trades_wrapper {
+  //display: none;
   .dropdown-wrapper {
     position: absolute;
     height: 100px;
@@ -560,7 +566,9 @@ header {
 
 #market_trades {
   position: absolute;
-  bottom: $gutter; left: $gutter;
+  top: $gutter_6x + $ticker-height + $market-list-height;
+  bottom: $gutter;
+  left: $gutter;
   width: $market-trades-width;
   height: $market-trades-height;
   min-height: $market-trades-height;
@@ -591,6 +599,7 @@ header {
 }
 
 #market_list_wrapper {
+  //display: none;
   .dropdown-wrapper {
     position: absolute;
     width: 200px;
@@ -602,10 +611,12 @@ header {
 
 #market_list {
   position: absolute;
-  top: $gutter; left: $gutter;
+  top: $gutter_4x + $ticker-height; left: $gutter;
   width: $market-list-width; height: $market-list-height;
   z-index: 999;
-
+  .panel.panel-default{
+    width: 100%;
+  }
   .panel-body-content {
     height: $market-list-height - $panel_table_header_high;
 
@@ -779,6 +790,7 @@ header {
 .panel-body-head { border-bottom: 1px solid #333; }
 
 #ticker, #order_book, #market_trades, #my_orders, #market_list {
+
   table {
     margin-bottom: 0px;
 
@@ -787,6 +799,7 @@ header {
 
     td, th {
       padding: 0px 2px;
+      text-align: center;
       border: none;
     }
 

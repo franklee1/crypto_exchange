@@ -32,11 +32,11 @@ BORDER_WIDTH = 1
       $('#candlestick').height(window_h - navbar_h - gutter_3x)
 
       order_h = window_h - navbar_h - entry_h - depths_h - my_orders_h - ticker_h - gutter_6x - 2*BORDER_WIDTH
-      $('#order_book').height(order_h)
+      # $('#order_book').height(order_h)
       $('#order_book .panel-body-content').height(order_h - panel_table_header_high - 2*PANEL_PADDING)
 
       trades_h = window_h - navbar_h - markets_h - gutter_3x - BORDER_WIDTH
-      $('#market_trades').height(trades_h)
+      # $('#market_trades').height(trades_h)
       $('#market_trades .panel').height(trades_h - 2*BORDER_WIDTH)
       $('#market_trades .panel-body-content').height(trades_h - 2*BORDER_WIDTH - panel_table_header_high - 2*PANEL_PADDING)
 
@@ -44,6 +44,35 @@ BORDER_WIDTH = 1
       window_w     = window.innerWidth
       markets_w    = $('#market_list').width()
       order_book_w = $('#order_book').width()
-      $('#candlestick').width(window_w - order_book_w - markets_w - gutter_4x - 20)
+      candlestick_w = window_w - order_book_w - gutter_4x
+      $('#candlestick').width(candlestick_w)
+      
+      $('#bid_entry').css('left',0)
+      $('#bid_entry').css('top',window_h)
+      $('#bid_entry').css('width',candlestick_w/2)
+      $('#bid_entry').css('height', '300px')
+
+      $('#ask_entry').css('left',candlestick_w/2+gutter)
+      $('#ask_entry').css('top',window_h)
+      $('#ask_entry').css('width',candlestick_w/2)
+      $('#ask_entry').css('height', '300px')
+
+      $('#order_book').width(candlestick_w)
+      $('#order_book').css('top',window_h + 330)
+      $('#order_book').css('left',0)
+      $('#order_book').height(300)
+
+      $('#depths_wrapper').width(candlestick_w)
+      $('#depths_wrapper').css('top',window_h + 660)
+      $('#depths_wrapper').css('left',0)
+
+      $('#ticker').css('left', candlestick_w + gutter)
+      $('#ticker').css('top', gutter_2x)
+
+      $('#market_list').css('left', candlestick_w + gutter)
+      $('#market_trades').css('left', candlestick_w + gutter)
+
+      $('#market_list_wrapper .dropdown-wrapper .dropdown-menu').css('display', 'none')
+      $('#market_trades_wrapper .dropdown-wrapper .dropdown-menu').css('display', 'none')
 
     @$node.resize()
