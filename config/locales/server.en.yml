@@ -2369,6 +2369,7 @@ en:
     market: Trade
     settings: Profile
     signin: Sign In
+    signin_btn: LOGIN
     signout: Exit
     signup: Register
     login_via_weibo: Login via Weibo

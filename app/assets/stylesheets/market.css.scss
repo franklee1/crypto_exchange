@@ -18,7 +18,11 @@
 
 /* basic layout
 ------------------------------------------------ */
-
+header.navbar.navbar-default.navbar-static-top>.container-fluid #logo img{
+  float:left;
+  width: 300px;
+  margin:auto;
+}
 html,
 body,
 #wrap,

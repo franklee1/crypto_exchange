@@ -11,6 +11,7 @@ ul.nav.navbar-nav.navbar-right li{
 header.navbar.navbar-default.navbar-static-top>.container{
   width: 100% !important;
 }
+
 header.navbar.navbar-default.navbar-static-top>.container #logo img{
   float: left;
   width: 300px;
