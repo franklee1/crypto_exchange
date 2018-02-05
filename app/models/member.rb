@@ -181,6 +181,7 @@ class Member < ActiveRecord::Base
   end
 
   def send_activation
+    puts 'send_activation'
     Token::Activation.create(member: self)
   end
 

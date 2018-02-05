@@ -15,6 +15,7 @@ Peatio::Application.routes.draw do
     mount MailsViewer::Engine => '/mails'
   end
 
+  get '/verification' => 'statics#verification', :as=> :verification
   get '/signin' => 'sessions#new', :as => :signin
   get '/privacy-policy' => 'statics#privacy', :as => :privacy
   get '/terms-of-use' => 'statics#terms', :as => :terms

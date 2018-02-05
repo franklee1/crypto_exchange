@@ -17,11 +17,11 @@ defaults: &defaults
   # --------------------------------------------------------------
   SMTP_PORT: 587
   # SMTP_AUTHENTICATION: "login" # could be plain, login or cram_md5
-  SMTP_DOMAIN: bullxchange.io
-  SMTP_ADDRESS: smtp.mailgun.org
-  SMTP_USERNAME: postmaster@bullxchange.io
-  SMTP_PASSWORD: af624dfcf6cc44a7517536c71f98fd6f
-  SMTP_AUTHENTICATION: plain
+  SMTP_DOMAIN: 'mail.rubbity.io'
+  SMTP_ADDRESS: 'smtp.mailgun.org'
+  SMTP_USERNAME: 'postmaster@mail.rubbity.io'
+  SMTP_PASSWORD: '21caa6e759dc06eae98b6021959ea1d8'
+  SMTP_AUTHENTICATION: plain #
 
   SUPPORT_MAIL: ugwuc@hotmail.com
   SYSTEM_MAIL_FROM: ugwuc@hotmail.com
