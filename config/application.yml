@@ -7,7 +7,7 @@ defaults: &defaults
   URL_HOST: localhost:3000
   URL_SCHEMA: http
   SESSION_EXPIRE: "60"
-  ADMIN: 'admin@myexchangepea.dev,admin@example.com,ugwuc@hotmail.com'
+  ADMIN: 'admin@myexchangepea.dev,admin@example.com,asai.yuki@yandex.com'
   TIMEZONE: 'Beijing'
 
   REDIS_URL: redis://127.0.0.1:6379
@@ -23,10 +23,10 @@ defaults: &defaults
   SMTP_PASSWORD: 'af624dfcf6cc44a7517536c71f98fd6f'
   SMTP_AUTHENTICATION: plain #
 
-  SUPPORT_MAIL: ugwuc@hotmail.com
-  SYSTEM_MAIL_FROM: ugwuc@hotmail.com
-  SYSTEM_MAIL_TO: ugwuc@hotmail.com
-  OPERATE_MAIL_TO: ugwuc@hotmail.com
+  SUPPORT_MAIL: asai.yuki@yandex.com
+  SYSTEM_MAIL_FROM: asai.yuki@yandex.com
+  SYSTEM_MAIL_TO: asai.yuki@yandex.com
+  OPERATE_MAIL_TO: asai.yuki@yandex.com
 
   # WebSocket Streaming API settings
   # --------------------------------------------------------------
