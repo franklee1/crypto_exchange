@@ -19,7 +19,7 @@ gem 'omniauth-weibo-oauth2', '~> 0.4.0'
 
 gem 'figaro'
 gem 'hashie'
-
+gem 'authy'
 gem 'aasm', '~> 3.4.0'
 gem 'amqp', '~> 1.3.0'
 gem 'bunny', '~> 1.2.1'
